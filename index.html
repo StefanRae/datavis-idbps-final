@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iDBPS</title>
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <section>
+      <div class="tekst">
+        <h2 id="titelWebsite">iDBPS</h2>
+        <p>IDBPS is een vorm van telemedicine in ontwikkeling op naam van het Zuyd Lectoraat Data Intelligence. Het streeft naar het vormen van een alternatief op waarnemende deskundigen bij aandoeningen als spierziektes. Routinechecks voor patiënten die lijden aan spierziektes kunnen erg omslachtig zijn zodra deze meerdere kilometers moeten afreizen naar klinieken waar deze deskundigen hen kunnen helpen. Daarnaast is in de zorgsector binnen dit vakgebied een personeelstekort. <br><br>
+          De visie van de IDBPS scanner is om de omslachtigheden beknopt te maken en de druk een beetje van de zorgsector af te halen. Er wordt onderzocht of gangbare PC-inrichtingen thuis (.incl webcam) gebruikt kunnen worden voor het serieel testen van spierkracht van diverse spiergroepen en het lichamelijk functioneren. 
+          </p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="375" height="92.278" viewBox="0 0 325 92.278" id="hoe-werkt-dat-svg">
+          <g id="Scroll" transform="translate(-350 -300)">
+            <line id="Line_1" data-name="Line 1" x2="20" y2="20" transform="translate(337.5 310.5)" fill="none" stroke="#111" stroke-linecap="round" stroke-width="7"></line>
+            <line id="Line_2" data-name="Line 2" x1="20" y2="20" transform="translate(357.5 310.5)" fill="none" stroke="#111" stroke-linecap="round" stroke-width="7"></line>
+            <line id="Line_3" data-name="Line 3" x2="20" y2="20" transform="translate(337.5 336.5)" fill="none" stroke="#111" stroke-linecap="round" stroke-width="7"></line>
+            <line id="Line_4" data-name="Line 4" x1="20" y2="20" transform="translate(357.5 336.5)" fill="none" stroke="#111" stroke-linecap="round" stroke-width="7"></line>
+            <text id="Scroll_naar_beneden_voor_meer" data-name="Scroll naar beneden voor meer" transform="translate(196 389)" fill="#111" stroke="#111" stroke-width="1" font-size="20" font-family="Montserrat-Bold, Montserrat" font-weight="700">
+              <tspan x="135" y="0">Hoe loopt dat onderzoek tot dusver?</tspan>
+            </text>
+          </g>
+        </svg>
+        <a href="https://dataintelligence.zuyd.nl/project/interactive-digital-body-position-scanner-idbps/">
+          <button id="refButton" >Volledige Achtergrondinformatie</button>
+        </a>
+      </div>
+      <div>
+        <img id="facescanner-svg" src="svg/facescanner-svg.svg">
+      </div>
+    </section>
+    <section>
+      <div id="metingenKopje" class="tekst">
+        <div>
+          <img src="svg/algorithm-icon-fixed-svg.svg" width="150px" height="150px">
+        </div>
+        <h2>Algoritme</h2>
+        <p>IDBPS moet ‘getraind’ worden zodat het hulpmiddel in de praktijk toegepast kan worden en het de toestand van de patiënt kan aflezen gebaseerd op het opvolgen van het ‘CMAS’ meetinstrument. Dit trainen van het hulpmiddel wordt gedaan door (gecombineerde) datasets van een proefpersoon te koppelen over een sessie via Machine Learning algoritmes.<br><br></p>
+      </div>
+      <div id="algoritmeKopje" class="tekst">
+        <div>
+          <img src="svg/measurement-icon-svg.svg" width="150px" height="150px">      
+        </div>
+        <h2>Metingen</h2>
+        <p>Voor het genereren van de datasets moeten verschillende metingen gemaakt worden. Bij een vastgestelde meetopstelling worden hartslag, verschillende lichaamsstoffen, stofwisseling, etc. gemeten terwijl een proefpersoon op een hometrainer fietst. Deze attributen worden bij het onderzoek gekoppeld aan referentiepunten op het lichaam van een proefpersoon om een algoritme op te trainen.</p>
+      </div>
+      <div id="toekomstKopje" class="tekst">
+        <div>
+          <img src="svg/future-icon-svg.svg" width="150px" height="150px">
+        </div>
+        <h2>Toekomst</h2>
+        <p>Het doel van de visualisatie is om de reeds verzamelde datasets in een omgeving weer te geven waar d.m.v. manipulatie van gegevens verbanden opgemerkt kunnen worden. De visualisatie is ook ontworpen om nieuwe datasets eenvoudig toe te voegen. Uiteindelijk zal deze visualisatie het Machine Learning team helpen bij het vinden van verbanden.<br><br></p>
+      </div>
+      </section>
+    <section>
+      <div class="hometrainer-stofwisselingTekst">
+        <h2>Hometrainer</h2>
+        <!-- #### Max 870 Karakters! -->
+        <p>In de Gestapelde lijngrafiek rechts kunt u verschillende meetsessies inladen via de keuzelijst. Hier worden de attributen Pedaaldruk (N), Vermogen (W), Snelheid (km/h), Hartslag (BPM) en Cadans (RPM).</p>
+      </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="289" height="368" fill="none" viewBox="0 0 289 368" class="graphSvg">
+            <mask id="a" width="252" height="368" x="37" y="0" maskUnits="userSpaceOnUse" style="mask-type:luminance">
+              <path fill="#fff" d="M37 0h252v368H37V0Z"/>
+            </mask>
+            <g mask="url(#a)">
+              <path fill="#000" d="M235.974 213.497c-1.074 10.174-1.074 10.174 8.116 14.749 34.81 17.33 40.381 65.113 10.293 89.648-3.307 2.697-3.68 4.541-1.031 7.588 1.958 2.252 3.728 4.685 5.419 7.148 3.228 4.704 6.839 8.361 12.747 10.236 8.423 2.673 12.422 9.848 12.12 18.418-.158 4.505-2.004 6.808-6.774 6.711-7.577-.155-15.16-.016-22.741-.064-6.141-.039-8.208-1.769-7.782-7.795.287-4.074-.973-7.021-3.412-10.034-4.429-5.471-8.593-11.157-12.823-16.787-1.571-2.09-3.347-3.355-6.195-3.24-33.476 1.351-66.969.309-100.454.557-8.804.065-17.632.562-26.417-.472-2.37-.279-3.944.567-5.367 2.476a980.33 980.33 0 0 1-15.732 20.545c-1.625 2.064-1.27 4.166-1.153 6.473.33 6.444-1.44 8.262-7.794 8.301-7.404.046-14.809.056-22.213.017-6.085-.033-8.257-2.332-7.692-8.46.763-8.286 4.937-14.586 12.91-17 5.184-1.57 8.476-4.462 11.345-8.642 2.787-4.059 5.823-7.962 8.957-11.763 1.83-2.22 1.997-3.873.342-6.471-11.719-18.402-8.077-37.69 9.335-50.61 1.123-.834 3.154-1.661 2.823-2.878-1.502-5.531 1.735-11.073.097-16.341-3.13-10.069-6.977-19.915-10.311-29.924-1.06-3.182-2.744-4.58-6.129-4.378a90.945 90.945 0 0 1-10.572-.013c-6.558-.376-11.647-4.186-13.388-10.175-1.825-6.275-.562-11.903 4.674-16.141 1.856-1.503 2.954-2.59 1.61-5.162-6.304-12.048-4.016-23.899 1.33-35.527 8.867-19.29 21.978-35.522 36.764-50.545 13.528-13.745 27.8-26.49 45.673-34.477 5.189-2.319 10.58-3.6 16.346-3.722 10.052-.214 17.64 3.832 23.235 12.063 6.821 10.036 13.379 20.253 22.326 28.683 14.846 13.989 32.879 17.39 52.376 16.25 2.49-.146 4.121-1.804 5.839-3.324 6.065-5.366 12.059-10.816 18.244-16.04 5.589-4.72 11.284-4.541 15.461.156 4.138 4.653 3.353 10.879-2.062 15.733-3.762 3.371-7.666 6.064-5.238 12.626 1.732 4.682-2.641 10.313-7.952 12.176-3.978 1.396-8.048 2.854-12.192 3.39-10.519 1.36-15.578 10.239-22.924 15.946-.666.517-.858 1.899-.917 2.9-.855 14.569-1.521 29.15-2.533 43.707-.338 4.867 4.269 8.187 3.416 13.488ZM52.028 162.624c-.088 13.987 4.815 20.703 18.136 24.736 4.716 1.427 9.501 2.633 14.194 4.131 21.838 6.967 40.981 17.823 53.93 37.538 11.193 17.039 17.232 36.077 21.578 55.742 1.383 6.259 3.888 9.098 8.568 8.716 4.619-.376 6.967-3.853 6.94-10.035-.048-10.58-1.435-20.991-3.465-31.363-4.588-23.445-13.749-44.616-30.404-62.154-11.448-12.057-25.29-20.682-40.224-27.664-5.233-2.447-6.025-4.343-2.916-9.194.852-1.33 1.884-2.544 2.829-3.815 13.89-18.679 32.483-31.428 52.847-42.024 4.072-2.119 6.61-1.007 9.695 1.941 33.1 31.622 67.895 29.455 104.226 18.829 2.856-.835 5.002-3.004 4.316-6.372-.691-3.395-3.407-4.296-6.479-4.024-5.078.45-10.133 1.151-15.209 1.632-26.798 2.535-50.338-3.517-68.13-25.338-5.58-6.844-10.417-14.161-15.415-21.397-6.113-8.85-13.82-11.654-24.311-9.19-4.661 1.095-9.05 2.85-13.212 5.232-19.683 11.262-35.84 26.611-50.29 43.798-12.289 14.616-23.39 30.016-27.204 50.275Zm19.104 137.29c4.502 16.346 13.69 23.413 30.555 23.421 39.129.019 78.259.017 117.389.013 3.698 0 7.388.02 11.044-.81 20.003-4.543 34.25-20.472 36.882-41.309 2.356-18.649-7.799-37.613-25.609-46.481-8.134-4.05-13.742-8.73-12.487-18.909.804-6.52.591-5.79-10.166-7.169-5.259-.674-4.921 2.988-5.145 6.417-.747 11.421-3.249 14.672-14.038 18.297-5.841 1.963-11.642 4.147-17.618 5.574-4.663 1.113-5.103 3.243-4.119 7.473 2.993 12.878 4.204 26.003 4.29 39.225.039 5.994-2.409 10.577-7.886 13.246-9.311 4.536-19.394-1.071-21.215-11.946-1.752-10.457-4.736-20.527-8.47-30.427-1.454-3.856-3.295-5.143-7.529-3.6-6.77 2.468-13.743 4.419-20.708 6.303-5.521 1.494-9.056.002-11.037-5.285-1.731-4.62-4.274-4.937-8.125-3.194-1.761.797-3.603 1.418-5.411 2.11-2.198.843-2.982 2.207-1.984 4.53 2.402 5.589.015 9.615-4.647 12.492-10.94 6.754-15.154 16.631-13.966 30.029Zm78.758-111.052c11.492 13.132 19.231 28.356 24.67 45.287 9.315-2.966 18.176-5.749 27.005-8.631 1.714-.56 3.387-1.78 3.687-3.536 1.315-7.675 3.478-15.07 5.618-22.552 2.366-8.267 1.863-17.395 2.253-26.164.159-3.562 1.116-7.25-.166-10.776-2.714-.581-5.133-.169-7.589.027-8.236.655-16.479 1.375-24.732 1.61-6.751.193-11.629-4.5-11.589-10.403.038-5.74 4.506-9.521 11.154-10.352 9.304-1.163 18.79-.18 29.442-2.604-19.994-3.842-35.957-12.666-49.747-25.475-2.326-2.16-4.056-1.063-6.115-.016-15.199 7.732-28.874 17.539-40.403 30.128-2.984 3.259-6.43 6.382-7.955 11.169 16.642 8.146 31.848 17.84 44.467 32.288Zm-33.483 63.419 22.831-7.387c-4.076-8.108-8.461-14.984-13.808-21.304-7.313-8.645-15.794-14.026-27.838-12.154-3.892.605-4.922 1.501-3.503 5.224 2.81 7.371 5.084 14.956 8.124 22.226 2.18 5.211 8.473 7.506 10.373 13.193.133.399 1.948.237 3.821.202ZM227 176.142c.325-3.846 1.063-7.712.892-11.536-.398-8.908 1.391-16.68 9.387-21.927.189-.124.146-.602.244-1.073-5.645.668-11.732-.84-16.242 4.282-.702.797-2.239 1.032-3.436 1.196-6.79.927-13.547 2.098-20.428 2.322-5.799.188-11.591.641-17.384 1.015-2.248.145-3.735 1.338-3.633 3.652.092 2.074 1.67 3.028 3.604 3.157 1.751.117 3.524.086 5.276-.036 9.648-.67 19.286-1.495 28.94-2.05 6.243-.359 7.272.749 6.827 6.783-.477 6.474-1.155 12.933-1.692 19.403-.45 5.42-.749 10.852-1.257 16.266-.311 3.314 1.42 4.253 4.318 4.524 3.197.299 3.334-1.632 3.44-3.94.321-7.014.734-14.023 1.144-22.038ZM95.302 239.971c-3.004-8.429-6.047-16.846-9.003-25.292-3.218-9.191-3.181-9.192 6.598-10.612.709-.104 1.742.341 2.173-1.008-6.568-3.049-13.324-5.429-20.305-7.225-5.266-1.355-10.758-2.231-15.39-5.26-2.947-1.928-5.47-2.022-8.1.228-2.562 2.19-3.131 5.015-2.32 8.125.86 3.299 3.151 4.927 6.543 5.065 4.74.194 9.51.808 14.214.487 4.572-.313 6.647 1.535 8.026 5.636 3.58 10.64 7.471 21.176 11.262 31.745.61 1.699 1.36 3.389 3.68 2.944 2.225-.425 3.482-1.616 2.622-4.833Zm161.656 121.082c5.094-.001 10.192-.128 15.281.034 4.598.146 5.053-1.974 3.539-5.581-1.754-4.181-6.957-7.652-11.227-7.397-4.813.287-10.14 4.654-11.211 9.113-.571 2.38.073 3.784 3.618 3.831Zm-190.52-6.481c-6.704-8.648-16.408-8.486-20.947.414-1.008 1.975-2.386 5.321.753 5.632 7.017.695 14.15.217 20.95.217.702-2.616-.015-4.079-.756-6.263Zm13.983-29.575c-1.263-.823-2.52-1.404-3.673.16-4.236 5.751-9.217 10.98-13.22 18.188 3.744.114 5.204 6.323 8.86 2.574 5.073-5.201 9.092-11.426 13.758-17.466a320.988 320.988 0 0 1-5.725-3.456Zm169.812 7.608c-6.385-8.975-6.389-8.976-14.649-3.353l14.104 18.707c8.284-5.578 8.284-5.577 2.626-12.685a178.417 178.417 0 0 1-2.081-2.669Zm29.721-235.14c-1.469-.686-2.753-.251-3.899.714-4.924 4.143-9.832 8.305-14.746 12.459 2.571.077 4.793.05 7.021.179 3.5.203 12.558-6.019 13.431-9.253.4-1.485.07-2.78-1.807-4.098v-.001Z"/>
+              <path fill="#000" d="M227.847 23.084c5.752 16.084 1.087 32.473-11.662 41.872-13.627 10.047-30.821 9.992-44.208-.142-12.168-9.211-17.049-26.573-11.635-41.39C165.219 10.077 178.911.342 193.269.012c14.949-.343 28.455 8.555 34.578 23.072ZM210.759 60.35c11.94-8.967 15.686-21.831 10.334-35.478-5.414-13.803-21.552-20.948-36.356-16.095-14.035 4.601-22.609 19.985-19.01 34.018 4.806 18.74 25.71 29.323 45.032 17.555Zm-95.621 255.993c-12.67-3.795-20.392-12.995-21.43-25.097-.934-10.898 5.311-21.866 15.247-26.774 10.667-5.269 22.73-3.681 31.402 4.384 7.057 6.562 10.068 14.868 8.547 24.306-.601 3.734.672 5.063 3.579 6.324 2.822 1.224 5.689 1.573 8.728 1.627 4.907.086 9.863-.66 14.716.675 4.565 1.255 6.747 4.606 6.773 8.96.024 4.135-1.977 7.673-6.353 8.664-6.93 1.57-14.039 1.667-20.913-.018-4.902-1.201-7.083-5.211-6.308-10.15.504-3.214-.462-4.638-3.692-5.055-7.699 9.417-17.083 15.01-30.296 12.154Zm19.464-10.897c1.18-1.234 2.841-2.12 3.034-4.161-1.124-2.026-3.353-2.381-5.186-3.285-3.78-1.864-7.65-3.544-11.413-5.437-1.78-.897-3.474-2.231-2.342-4.549 1.048-2.149 3.032-2.145 5.01-1.346 2.607 1.05 5.123 2.355 7.784 3.23 3.395 1.118 6.211 3.914 10.062 3.781 3.282-14.003-8.991-27.868-22.23-25.405-9.5 1.767-15.974 6.967-18.248 16.637-1.903 8.09 1.489 16.648 8.812 21.543 8.073 5.397 16.2 4.763 24.717-1.008Zm35.543 8.072c2.21-.155 5.338.382 5.402-2.676.064-3.058-3.071-2.785-5.277-2.847-3.508-.098-7.027-.097-10.53.076-1.781.088-3.764.679-3.561 2.979.163 1.856 1.877 2.397 3.561 2.43 3.16.062 6.321.039 10.405.038Z"/>
+            </g>
+            <g clip-path="url(#b)" id="heartGroup">
+              <path fill="#FF2424" d="M127.96 87.001a8.416 8.416 0 0 1 7.764 9.023l-.047.634c-4.231 6.636-10.411 11.677-18.046 15.528l.63-8.393.677-9.028a8.417 8.417 0 0 1 9.022-7.764Z"/>
+              <path fill="#FF2424" d="M144.075 105.729a8.416 8.416 0 0 0-7.764-9.023l-.634-.048-18.046 15.528 8.393.629 9.028.677a8.416 8.416 0 0 0 9.023-7.763Z"/>
+            </g>
+            <g id="pedalPressureGroup">
+              <path fill="#8E349D" d="m167.589 262.641-5.595.677 1.714 14.165-4.994.604 9.171 9.7 6.713-11.622-5.295.641-1.714-14.165Z"/>
+            </g>
+            <g id="powerGroup">
+              <path fill="#D59E35" d="M244 257h-11.116l-10.927 20.934h7.347L218 300l25.812-28.478h-9.421L244 257Z"/>
+            </g>
+            <g id="speedGroup">
+              <rect width="49" height="9" x="13" y="266" fill="#BBB" rx="4.5"/>
+              <rect width="49" height="9" x="13" y="309" fill="#BBB" rx="4.5"/>
+              <rect width="49" height="9" y="287" fill="#BBB" rx="4.5"/>
+            </g>
+            <g id="cadenceGroup">
+              <path fill="#59CF2F" stroke="#59CF2F" d="M172 313.5h-13c-.5-.167-1.8-.9-3-2.5s2.5-2.667 4.5-3H171c1.333-.167 4.1.1 4.5 2.5.4 2.4-2.167 3-3.5 3Z"/>
+            </g>
+            <defs>
+              <clipPath id="b">
+                <path fill="#fff" d="M0 0h30v30H0z" transform="rotate(49.288 -24.5 182.4)"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <div id=stackedLine>
+          <div id="file-selector-div"> Dataset: 
+            <select id="file-selector">
+              <option value="">Selecteer een dataset-</option>
+              <option value="ingekorte-dataset-fiets-1a.csv">Proefpersoon A - Sessie 1</option>
+              <option value="ingekorte-dataset-fiets-1b.csv">Proefpersoon B - Sessie 1</option>
+              <option value="ingekorte-dataset-fiets-1c.csv">Proefpersoon C - Sessie 1</option>
+              <option value="ingekorte-dataset-fiets-2a.csv">Proefpersoon A - Sessie 2</option>
+              <option value="ingekorte-dataset-fiets-2b.csv">Proefpersoon B - Sessie 2</option>
+              <option value="ingekorte-dataset-fiets-2c.csv">Proefpersoon C - Sessie 2</option>
+            </select>
+          </div>
+        </div>
+    </section>
+    <section>
+      <div class="hometrainer-stofwisselingTekst">
+        <h2>Stofwisseling</h2>
+        <p>In de Scatterplot rechts kunt u alle attributen gerelateerd aan de stofwisseling selecteren en met elkaar vergelijken. De per attribuut weergegeven punten stammen van elke opgenomen dataset tot nu toe.</p>
+      </div>
+      <!-- <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="333" height="368" fill="none" viewBox="0 0 333 368" class="graphSvg">
+          <path stroke="#000" stroke-width="8" d="M211.782 363.34h.064c1.6-10.327 3.413-19.49 5.539-26.87 1.18-4.093 2.481-7.729 3.941-10.75 1.438-2.979 3.151-5.615 5.272-7.462l1.129-.984h1.498c8.887 0 17.778-.086 26.678-.172h.049c8.74-.085 17.489-.17 26.212-.173 10.067-2.115 16.28-6.621 20.855-14.177 1.794-3.012 1.81-6.835.532-11.978-.63-2.534-1.521-5.188-2.505-8.023l-.396-1.139c-.85-2.435-1.742-4.996-2.487-7.536-1.606-5.184.024-9.725 2.249-13.29 1.656-2.655 3.939-5.197 5.8-7.27.449-.5.874-.973 1.26-1.414-.282-.6-.945-1.429-2.116-2.666l-.485-.505c-.939-.974-2.21-2.292-2.993-3.53-.487-.77-1.152-2.045-1.138-3.628.015-1.852.934-3.336 2.18-4.327a62.804 62.804 0 0 1 2.309-1.751l.477-.351c.861-.637 1.547-1.165 2.123-1.698 1.057-.977 1.563-1.796 1.737-2.88.086-.784-.255-1.563-2.038-3.86l-.262-.336c-1.453-1.855-3.773-4.818-4.002-8.817-.123-.52-.332-1.162-.633-2.016l-.17-.479c-.293-.824-.644-1.809-.918-2.767-.592-2.074-1.397-5.824 1.094-8.94l.017-.022.018-.022c2.517-3.058 5.8-3.974 8.433-4.429a65.195 65.195 0 0 1 2.499-.362c.437-.058.844-.112 1.182-.161.968-.143 1.81-.301 2.578-.525 1-.585 2.153-1.174 3.231-1.725.371-.19.734-.375 1.078-.554 1.622-.843 3.103-1.671 4.344-2.597 1.241-.925 2.048-1.808 2.499-2.666.407-.774.625-1.709.383-3.042l-.002-.009c-.502-2.799-2.492-6.867-5.899-12.065-3.329-5.078-7.704-10.791-12.496-16.796-2.197-2.754-4.488-5.576-6.795-8.418-7.62-9.386-15.42-18.994-20.62-27.113l-1.173-1.832.9-1.98c2.548-5.609 3.233-10.912 2.533-16.224-7.227-54.212-58.732-107.7-153.263-97.825-53.63 5.601-91.74 29.416-111.756 63.373-20.027 33.978-22.356 78.825-2.95 127.318l.001.001c3.125 7.817 8.47 15.454 14.383 23.9 1.028 1.47 2.074 2.963 3.128 4.487 6.952 10.049 14.086 21.173 17.48 34.017 1.158 4.268 1.265 11.186.85 19.168-.425 8.172-1.438 18.019-2.802 28.468-2.488 19.063-6.166 40.318-9.67 57.424h171.034Z"/>
+        </svg>
+      </div> -->
+
+      <!-- <div id=scatterplot-absolute>
+      </div>
+
+      <div>
+        <label>
+          <input type="checkbox" name="y-axis-absolute" value="VO2 (mL/min)">VO2 (mL/min)</label>
+        <br>
+        <label>
+          <input type="checkbox" name="y-axis-absolute" value="VCO2 (mL/min)">VCO2 (mL/min)</label>
+        <br>
+        <label><input type="checkbox" name="y-axis-absolute" value="RER">RER</label>
+        <br>
+        <label>
+          <input type="checkbox" name="y-axis-absolute" value="Energy Expenditure (kJ/min)">Energy Expenditure (kJ/min)</label>
+        <br>
+        <label>
+          <input type="checkbox" name="y-axis-absolute" value="Energy Expenditure (kcal/min)">Energy Expenditure (kcal/min)</label>
+        <br>
+        <label>
+          <input type="checkbox" name="y-axis-absolute" value="FiO2 (%)">FiO2 (%)</label>
+        <br>
+        <label>
+          <input type="checkbox" name="y-axis-absolute" value="FeO2 (%)">FeO2 (%)</label>
+        <br>
+        <label>
+          <input type="checkbox" name="y-axis-absolute" value="FiCO2 (%)">FiCO2 (%)</label>
+        <br>
+        <label>
+          <input type="checkbox" name="y-axis-absolute" value="FeCO2 (%)">FeCO2 (%)</label>
+        <br>
+        <label>
+          <input type="checkbox" name="y-axis-absolute" value="Flow (sL/min)">Flow (sL/min)</label>
+        <br>
+        <label>
+          <input type="checkbox" name="y-axis-absolute" value="Pressure Ambient (mbar)">Pressure Ambient (mbar)</label>
+        <br>
+        <label>
+          <input type="checkbox" name="y-axis-absolute" value="Temperature Flow (Degrees Celsius)">Temperature Flow (Degrees Celsius)</label>
+        <br>
+        <label>
+          <input type="checkbox" name="y-axis-absolute" value="Relative Humidity Flow (%)">Relative Humidity Flow (%)</label>
+        <br>
+        <label>
+          <input type="checkbox" name="y-axis-absolute" value="Specific VO2 (mL/min/kg)">Specific VO2 (mL/min/kg)</label>
+        <br>
+        <label>
+          <input type="checkbox" name="y-axis-absolute" value="Specific VCO2 (mL/min/kg)">Specific VCO2 (mL/min/kg)</label>
+        <br>
+        <label>
+          <input type="checkbox" name="y-axis-absolute" value="Respiratory Rate (1/min)">Respiratory Rate (1/min)</label>
+        <br>
+        <label>
+          <input type="checkbox" name="y-axis-absolute" value="Ventilation (sL/min)">Ventilation (sL/min)</label>
+      </div> -->
+      
+      
+      <div id=scatterplot-relative>
+        <div id="scatterplot-tooltip"></div>
+      </div>
+
+      <div>
+        <label>
+          <input type="checkbox" name="y-axis-relative" value="VO2 (mL/min)">VO2 (mL/min)</label>
+        <br>
+        <label>
+          <input type="checkbox" name="y-axis-relative" value="VCO2 (mL/min)">VCO2 (mL/min)</label>
+        <br>
+        <label><input type="checkbox" name="y-axis-relative" value="RER">RER</label>
+        <br>
+        <label>
+          <input type="checkbox" name="y-axis-relative" value="Energy Expenditure (kJ/min)">Energy Expenditure (kJ/min)</label>
+        <br>
+        <label>
+          <input type="checkbox" name="y-axis-relative" value="Energy Expenditure (kcal/min)">Energy Expenditure (kcal/min)</label>
+        <br>
+        <label>
+          <input type="checkbox" name="y-axis-relative" value="FiO2 (%)">FiO2 (%)</label>
+        <br>
+        <label>
+          <input type="checkbox" name="y-axis-relative" value="FeO2 (%)">FeO2 (%)</label>
+        <br>
+        <label>
+          <input type="checkbox" name="y-axis-relative" value="FiCO2 (%)">FiCO2 (%)</label>
+        <br>
+        <label>
+          <input type="checkbox" name="y-axis-relative" value="FeCO2 (%)">FeCO2 (%)</label>
+        <br>
+        <label>
+          <input type="checkbox" name="y-axis-relative" value="Flow (sL/min)">Flow (sL/min)</label>
+        <br>
+        <label>
+          <input type="checkbox" name="y-axis-relative" value="Pressure Ambient (mbar)">Pressure Ambient (mbar)</label>
+        <br>
+        <label>
+          <input type="checkbox" name="y-axis-relative" value="Temperature Flow (Degrees Celsius)">Temperature Flow (Degrees Celsius)</label>
+        <br>
+        <label>
+          <input type="checkbox" name="y-axis-relative" value="Relative Humidity Flow (%)">Relative Humidity Flow (%)</label>
+        <br>
+        <label>
+          <input type="checkbox" name="y-axis-relative" value="Specific VO2 (mL/min/kg)">Specific VO2 (mL/min/kg)</label>
+        <br>
+        <label>
+          <input type="checkbox" name="y-axis-relative" value="Specific VCO2 (mL/min/kg)">Specific VCO2 (mL/min/kg)</label>
+        <br>
+        <label>
+          <input type="checkbox" name="y-axis-relative" value="Respiratory Rate (1/min)">Respiratory Rate (1/min)</label>
+        <br>
+        <label>
+          <input type="checkbox" name="y-axis-relative" value="Ventilation (sL/min)">Ventilation (sL/min)</label>
+        <br>
+          <button id="select-all-button">Selecteer Alles</button>
+        </div>
+
+
+
+
+    </section>
+  </div>
+<script src="https://d3js.org/d3.v6.js"></script>
+
+<script src="js/stackedline-1.js"></script>
+
+<script src="js/opmaak.js"></script>
+
+
+
+<script src="js/scatterplot-base.js"></script>
+
+<script src="js/scatterplot-absolute-definitive.js"></script>
+
+<script src="js/scatterplot-relative-defintive.js"></script>
+<script></script>
+</body>
+</html>
