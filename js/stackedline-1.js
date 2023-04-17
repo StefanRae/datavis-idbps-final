@@ -1,7 +1,6 @@
 // Template gedeeltelijk gebruikt van:
 // https://d3-graph-gallery.com/stackedarea.html
 
-// set the dimensions and margins of the graph
 const margin = {top: 20, right: 30, bottom: 30, left: 55},
 width = 460 - margin.left - margin.right,
 height = 400 - margin.top - margin.bottom;
@@ -32,7 +31,6 @@ function clearChart() {
   d3.select("#stackedLine").selectAll("#yRange").remove();
 }
 
-// Tabel ontleden
 d3.select('#file-selector').on('change', function() {
 
   clearChart()
@@ -40,11 +38,9 @@ d3.select('#file-selector').on('change', function() {
 
   d3.csv('data/' + filename).then(function(data) {
 
-    // List of groups = header of the csv files
     const keys = data.columns.slice(1)
     console.log(keys)
 
-    // X-as toevoegen
     const x = d3.scaleLinear()
     .domain([0, d3.max(data, function(d) { return +d.tijd; })])
     .range([ 0, width ]);
@@ -62,7 +58,6 @@ d3.select('#file-selector').on('change', function() {
     .attr("font-size", "10px");
     
 
-    // Y-as toevoegen
     const y = d3.scaleLinear()
     .domain([0, 900])
     .range([ height, 0 ]);
@@ -78,11 +73,6 @@ d3.select('#file-selector').on('change', function() {
     .domain(keys)
     .range(['#b4edd2','#a0cfd3','#8d94ba','#9a7aa0','#87677b'])
 
-
-    //# Oude kleurenRange
-    // .range(['#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#ffff33','#a65628','#f781bf'])
-
-    //stack the data?
     const stackedData = d3.stack()
     .keys(keys)
     (data)
@@ -95,7 +85,6 @@ d3.select('#file-selector').on('change', function() {
     .style("opacity", 0)
     .style("font-size", 17)
 
-    // Three function that change the tooltip when user hover / move / leave a cell
     const mouseover = function(event,d) {
       Tooltip.style("opacity", 1)
       d3.selectAll("[id^=areaField]").style("opacity", .4)
@@ -120,7 +109,6 @@ d3.select('#file-selector').on('change', function() {
 
     console.log()
 
-    // Gebied (area) genereren
     svg
     .selectAll("mylayers")
     .data(stackedData)
@@ -133,7 +121,6 @@ d3.select('#file-selector').on('change', function() {
     .on("mouseover", mouseover)
     .on("mousemove", mousemove)
     .on("mouseleave", mouseleave)
-    // de x-as tekst met "tijd" altijd boven de svg paden van stackedgram plaatsen
     tijdXaxis.raise()
 
     heart
